@@ -1,0 +1,9 @@
+.section-1 {
+  display: flex;
+}
+.section-1 .section-1__container {
+  display: flex;
+  flex-flow: row;
+  -moz-column-gap: 28px;
+       column-gap: 28px;
+}/*# sourceMappingURL=home.css.map */
