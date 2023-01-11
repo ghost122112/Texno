@@ -1,9 +1,9 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url(/assets/styles/layout/style.scss);
 .section-1 {
   display: flex;
   justify-content: center;
+  margin-top: 58px;
   margin-bottom: 59px;
 }
 .section-1 .section-1__container {
@@ -357,13 +357,12 @@
   bottom: 8px;
   text-align: center;
 }
-.section-1 .section-1__container .section-1__container__block-4 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-  z-index: 100;
+.section-1 .section-1__container .section-1__container__block-4 .dots {
+  text-align: center;
+  display: flex;
+  flex-flow: row;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
 }
 .section-1 .section-1__container .section-1__container__block-4 .dot {
   cursor: pointer;
@@ -379,8 +378,8 @@
   flex-flow: row;
   z-index: 100;
   position: relative;
-  left: -365px;
-  top: 219px;
+  left: 292px;
+  top: -70px;
 }
 .section-1 .section-1__container .section-1__container__block-4 .active, .section-1 .section-1__container .section-1__container__block-4 .dot:hover {
   background: red;
