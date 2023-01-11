@@ -248,6 +248,15 @@
                 z-index: 100;
             }
             
+            .dots {
+                text: {
+                    align: center;
+                    display: flex;
+                    flex-flow: row;
+                    column-gap: 5px;
+                }
+            }
+
             .dot {
                 cursor: pointer;
                 height: 7px;
@@ -262,8 +271,8 @@
                 flex-flow: row;
                 z-index: 100;
                 position: relative;
-                left: -365px;
-                top: 219px;
+                left: 303px;
+                top: -70px;
             }
               
             .active, .dot:hover {
@@ -715,3 +724,10 @@
 }
 
 // end of section 2
+
+
+// start of section 3
+
+
+
+// end of section 3
