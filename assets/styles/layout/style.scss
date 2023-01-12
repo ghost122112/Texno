@@ -32,6 +32,7 @@ $second-con-bg-color: #F9F5F0;
 $top-nav-btn-hover: #242f42;
 $top-nav-btn-active: #161D29;
 $top-nav-btn-f-color-active: rgba(255, 255, 255, 0.5);
+$footer-social-media-links: #212A3A;
 
 // ----------------------------- //
 
@@ -726,7 +727,7 @@ html {
         }
         .footer__wrapper__section-1 {
             flex-flow: row;
-            min-height: 191px;
+            min-height: 195px;
             background: $bottom-navbar-bg-color;
             .footer__wrapper__section-1__left-block {
                 width: 38%;
@@ -813,6 +814,7 @@ html {
             .blocks-style {
                 display: flex;
                 flex-flow: row;
+                flex-wrap: wrap;
                 height: 100%;
                 width: 25%;
                 .lists-style {
@@ -825,14 +827,62 @@ html {
             .footer__wrapper__section-2__block-1 {
                 align-items: center;
                 span {
-                    margin-bottom: -4px;
+                    margin-bottom: 2px;
                 }
             }
             .footer__wrapper__section-2__block-2 {
                 width: 43%;
-                .footer__wrapper__section-2__block-2__social-media-links {
+                justify-content: center;
+                .footer__wrapper__section-2__block-2__social-media-list {
+                    column-gap: 1px;
                     li {
-                        .footer__wrapper__section-2__block-2__social-media-links__link
+                        .footer__wrapper__section-2__block-2__social-media-list__link {
+                            .footer__wrapper__section-2__block-2__social-media-list__link__btn {
+                                position: relative;
+                                left: 19px;
+                                top: 3px;
+                                width: 44px;
+                                height: 44px;
+                                border-radius: 50%;
+                                border: none;
+                                background: {
+                                    color: $footer-social-media-links;
+                                    repeat: no-repeat;
+                                    position: center;
+                                }
+                                &:hover {
+                                    transition: all 0.3s ease-in;
+                                    cursor: pointer;
+                                    background: {
+                                        color: $basic-red;
+                                    }
+                                }
+                                &:active {
+                                    filter: opacity(0.5);
+                                }
+                            }
+                        }
+                    }
+                    li:nth-child(1) {
+                        .footer__wrapper__section-2__block-2__social-media-list__link {
+                            .footer__wrapper__section-2__block-2__social-media-list__link__btn {
+                                background-image: url(/assets/photos/social\ media\ icons/icon-vk.svg);
+                            }
+                        }
+                    }
+                    li:nth-child(2) {
+                        .footer__wrapper__section-2__block-2__social-media-list__link {
+                            .footer__wrapper__section-2__block-2__social-media-list__link__btn {
+                                background-image: url(/assets/photos/social\ media\ icons/icon-fb.svg);
+                            }
+                        }
+                    }
+                    li:nth-child(3) {
+                        .footer__wrapper__section-2__block-2__social-media-list__link {
+                            .footer__wrapper__section-2__block-2__social-media-list__link__btn {
+                                background-image: url(/assets/photos/social\ media\ icons/icon-insta.svg);
+                            }
+                        }
                     }
                 }
             }
@@ -840,6 +890,7 @@ html {
                 width: 32%;
                 .footer__wrapper__section-2__block-3__contact-list {
                     column-gap: 50px;
+                    margin-top: -4px;
                 }
             }
         }
