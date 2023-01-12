@@ -417,7 +417,7 @@ $default-font-style: normal;
 
 // end of section 1
 
-
+// default section 4 and section 5 header style 
 
 .section-header {
     display: flex;
@@ -467,7 +467,10 @@ $default-font-style: normal;
     }
 }
 
+// end of default section 4-5 header style
+
 // start of section 2
+
 .section-2 {
     display: flex;
     justify-content: center;
@@ -501,7 +504,6 @@ $default-font-style: normal;
 }
 
 // end of section 2
-
 
 // start of section 3
 
@@ -638,6 +640,27 @@ $default-font-style: normal;
 
 // start of section 4
 
+.section-4, .section-5 {
+    h3 {
+        line-height: 30px;
+        text-transform: uppercase;
+        color: $bottom-navbar-bg-color;
+        font: {
+            family: $f-family-cuprum;
+            weight: 400;
+            size: 30px;
+        }
+    }
+    p {
+        line-height: 25px;
+        font: {
+            family: $f-family-ptsans;
+            weight: 400;
+            size: 13px;
+        }
+    }
+}
+
 .section-4 {
     display: flex;
     justify-content: center;
@@ -649,24 +672,6 @@ $default-font-style: normal;
         width: 100%;
         height: 474px;
         padding: $padding;
-        h3 {
-            line-height: 30px;
-            text-transform: uppercase;
-            color: $bottom-navbar-bg-color;
-            font: {
-                family: $f-family-cuprum;
-                weight: 400;
-                size: 30px;
-            }
-        }
-        p {
-            line-height: 25px;
-            font: {
-                family: $f-family-ptsans;
-                weight: 400;
-                size: 13px;
-            }
-        }
         .section-4__container__header {
             display: flex;
             flex-flow: column;
@@ -798,5 +803,104 @@ $default-font-style: normal;
     }
 }
 
-
 // end of section 4
+
+// start of section 5
+
+.section-5 {
+    display: flex;
+    justify-content: center;
+    .section-5__container {
+        display: flex;
+        flex-flow: row;
+        width: 100%;
+        height: 424px;
+        margin-top: 54px;
+        padding: $padding;
+        .section-5__container__left-block,
+        .section-5__container__right-block {
+            display: flex;
+            flex-flow: column;
+            height: 100%;
+            .section-5__container__left-block__header,
+            .section-5__container__right-block__header {
+                .section-5__container__left-block__header__title,
+                .section-5__container__right-block__header__title {
+                    margin-bottom: 22px;
+                }
+            }
+        }
+        .section-5__container__left-block {
+            width: 68%;
+            .section-5__container__left-block__header {
+                .section-5__container__left-block__header__first-description {
+                    margin-bottom: 24px;
+                }
+            }
+            .section-5__container__left-block__link-block-list {
+                display: flex;
+                flex-flow: column;
+                row-gap: 11px;
+                li:nth-child(1),
+                li:nth-child(2),
+                li:nth-child(3) {
+                    .section-5__container__left-block__link-block-list__label {
+                        span {
+                            position: relative;
+                            left: 7px;
+                            top: 0px;
+                            line-height: 24px;
+                            font: {
+                                family: $f-family-cuprum;
+                                size: 18px;
+                                weight: 400;
+                            }
+                            img {
+                                position: relative;
+                                left: -8px;
+                                top: -4px;
+                            }
+                        }
+                    }
+                }
+                li:nth-child(4) {
+                    margin-top: 8px;
+                    .section-5__container__left-block__link-block-list__link {
+                        .section-5__container__left-block__link-block-list__link__btn {
+                            width: 34.5%;
+                            span {
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .section-5__container__right-block {
+            width: 32%;
+            .section-5__container__right-block__header {
+                .section-5__container__right-block__header__description {
+                    margin-bottom: 32px;
+                }
+            }
+            .section-5__container__right-block__map-section {
+                iframe {
+                    margin-bottom: 20px;
+                }
+                .section-5__container__right-block__map-section__link__btn {
+                    width: 100%;
+                    text-transform: uppercase;
+                    span {
+                        position: relative;
+                        left: 2px;
+                        top: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// end of section 5
+
+// end of home page stylization

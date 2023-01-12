@@ -556,6 +556,21 @@
   background-image: url(/assets/photos/manufacturers/metabo.svg);
 }
 
+.section-4 h3, .section-5 h3 {
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425C;
+  font-family: "Cuprum", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+.section-4 p, .section-5 p {
+  line-height: 25px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+
 .section-4 {
   display: flex;
   justify-content: center;
@@ -568,20 +583,6 @@
   width: 100%;
   height: 474px;
   padding: 0px calc(50% - 470px);
-}
-.section-4 .section-4__container h3 {
-  line-height: 30px;
-  text-transform: uppercase;
-  color: #32425C;
-  font-family: "Cuprum", sans-serif;
-  font-weight: 400;
-  font-size: 30px;
-}
-.section-4 .section-4__container p {
-  line-height: 25px;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-size: 13px;
 }
 .section-4 .section-4__container .section-4__container__header {
   display: flex;
@@ -698,4 +699,89 @@
 }
 .section-4 .section-4__container .section-4__container__content .section-4__container__content-blocks .section-4__container__content-blocks__tab-content:nth-child(3) .section-4__container__content-blocks__tab-content__block .section-4__container__content-blocks__tab-content__block__link .section-4__container__content-blocks__tab-content__block__link__btn span {
   text-transform: uppercase;
+}
+
+.section-5 {
+  display: flex;
+  justify-content: center;
+}
+.section-5 .section-5__container {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  height: 424px;
+  margin-top: 54px;
+  padding: 0px calc(50% - 470px);
+}
+.section-5 .section-5__container .section-5__container__left-block,
+.section-5 .section-5__container .section-5__container__right-block {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+.section-5 .section-5__container .section-5__container__left-block .section-5__container__left-block__header .section-5__container__left-block__header__title,
+.section-5 .section-5__container .section-5__container__left-block .section-5__container__left-block__header .section-5__container__right-block__header__title,
+.section-5 .section-5__container .section-5__container__left-block .section-5__container__right-block__header .section-5__container__left-block__header__title,
+.section-5 .section-5__container .section-5__container__left-block .section-5__container__right-block__header .section-5__container__right-block__header__title,
+.section-5 .section-5__container .section-5__container__right-block .section-5__container__left-block__header .section-5__container__left-block__header__title,
+.section-5 .section-5__container .section-5__container__right-block .section-5__container__left-block__header .section-5__container__right-block__header__title,
+.section-5 .section-5__container .section-5__container__right-block .section-5__container__right-block__header .section-5__container__left-block__header__title,
+.section-5 .section-5__container .section-5__container__right-block .section-5__container__right-block__header .section-5__container__right-block__header__title {
+  margin-bottom: 22px;
+}
+.section-5 .section-5__container .section-5__container__left-block {
+  width: 68%;
+}
+.section-5 .section-5__container .section-5__container__left-block .section-5__container__left-block__header .section-5__container__left-block__header__first-description {
+  margin-bottom: 24px;
+}
+.section-5 .section-5__container .section-5__container__left-block .section-5__container__left-block__link-block-list {
+  display: flex;
+  flex-flow: column;
+  row-gap: 11px;
+}
+.section-5 .section-5__container .section-5__container__left-block .section-5__container__left-block__link-block-list li:nth-child(1) .section-5__container__left-block__link-block-list__label span,
+.section-5 .section-5__container .section-5__container__left-block .section-5__container__left-block__link-block-list li:nth-child(2) .section-5__container__left-block__link-block-list__label span,
+.section-5 .section-5__container .section-5__container__left-block .section-5__container__left-block__link-block-list li:nth-child(3) .section-5__container__left-block__link-block-list__label span {
+  position: relative;
+  left: 7px;
+  top: 0px;
+  line-height: 24px;
+  font-family: "Cuprum", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.section-5 .section-5__container .section-5__container__left-block .section-5__container__left-block__link-block-list li:nth-child(1) .section-5__container__left-block__link-block-list__label span img,
+.section-5 .section-5__container .section-5__container__left-block .section-5__container__left-block__link-block-list li:nth-child(2) .section-5__container__left-block__link-block-list__label span img,
+.section-5 .section-5__container .section-5__container__left-block .section-5__container__left-block__link-block-list li:nth-child(3) .section-5__container__left-block__link-block-list__label span img {
+  position: relative;
+  left: -8px;
+  top: -4px;
+}
+.section-5 .section-5__container .section-5__container__left-block .section-5__container__left-block__link-block-list li:nth-child(4) {
+  margin-top: 8px;
+}
+.section-5 .section-5__container .section-5__container__left-block .section-5__container__left-block__link-block-list li:nth-child(4) .section-5__container__left-block__link-block-list__link .section-5__container__left-block__link-block-list__link__btn {
+  width: 34.5%;
+}
+.section-5 .section-5__container .section-5__container__left-block .section-5__container__left-block__link-block-list li:nth-child(4) .section-5__container__left-block__link-block-list__link .section-5__container__left-block__link-block-list__link__btn span {
+  text-transform: uppercase;
+}
+.section-5 .section-5__container .section-5__container__right-block {
+  width: 32%;
+}
+.section-5 .section-5__container .section-5__container__right-block .section-5__container__right-block__header .section-5__container__right-block__header__description {
+  margin-bottom: 32px;
+}
+.section-5 .section-5__container .section-5__container__right-block .section-5__container__right-block__map-section iframe {
+  margin-bottom: 20px;
+}
+.section-5 .section-5__container .section-5__container__right-block .section-5__container__right-block__map-section .section-5__container__right-block__map-section__link__btn {
+  width: 100%;
+  text-transform: uppercase;
+}
+.section-5 .section-5__container .section-5__container__right-block .section-5__container__right-block__map-section .section-5__container__right-block__map-section__link__btn span {
+  position: relative;
+  left: 2px;
+  top: 0px;
 }/*# sourceMappingURL=home.css.map */
