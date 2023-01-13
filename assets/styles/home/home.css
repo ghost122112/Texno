@@ -788,6 +788,7 @@
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
   border: none;
   border-top: 7px solid #EE3643;
+  background: #3D546F;
 }
 .section-5 .section-5__container .section-5__container__right-block .section-5__container__right-block__map-section .section-5__container__right-block__map-section__popup-map .section-5__container__right-block__map-section__popup-map__close-btn {
   position: relative;

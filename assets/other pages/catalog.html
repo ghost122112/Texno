@@ -11,10 +11,229 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/styles/layout/style.css">
+    <link rel="stylesheet" href="/assets/styles/catalog/catalog.css">
     <script src="/assets/scripts/main.js" defer></script>
+    <script src="/assets/scripts/drag.js" defer></script>
     <title>Texnomart - Catalog</title>
 </head>
-<body>
-    
+<body class="body">
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__wrapper__container">
+                <nav class="nav">
+                    <ul class="nav__top-list">
+                        <li>
+                            <a class="nav__top-list__link home-logo" href="/index.html" title="Home">
+                                <button class="button-default home-logo__btn" type="button" title="Главное"></button>
+                            </a>
+                        </li>
+                        <li>
+                            <form class="nav__top-list__form">
+                                <input class="nav__top-list__form__search input-default" type="search" title="search" placeholder="Поиск:" />
+                            </form>
+                        </li>
+                        <li>
+                            <a class="nav__top-list__link" href="#" title="Закладки">
+                                <button class="button-default zakladki-bgcolor" type="button">
+                                    <span>Закладки: </span><span>0</span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav__top-list__link" href="#" title="Корзина">
+                                <button class="button-default korzina-bgcolor korzina-bgcolor-catalog" type="button">
+                                    <span>Корзина: </span><span>10</span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav__top-list__link" href="#" title="Оформить заказ">
+                                <button class="button-default confirm-purchase-bgcolor" type="button">
+                                    <span>Оформить заказ</span>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav__middle-list">
+                        <li>
+                            <h2 class="nav__middle-list__title">
+                                Интернет-магазин<br>строительных материалов<br>и инструментов для
+                                ремонта
+                            </h2>
+                        </li>
+                        <li>
+                            <a class="nav__middle-list__link" href="tel:+78125550555" title="click to call">
+                                <button class="nav__middle-list__link__btn button-default tel-link" type="button">
+                                    <span>+7 (812) 555-05-55</span>
+                                </button>
+                                <span class="office-location">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav__middle-list__link catalog-page-logged-in" href="/index.html" title="click to logout">
+                                <button class="nav__middle-list__link__btn button-default login-link" type="button">
+                                    <div class="user-icon"></div>
+                                    <span class="user-name">Равшан Джамшутович</span>
+                                </button>
+                                <span class="user-purchases">Мои заказы <span class="user-data">Личный кабинет</span></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav__middle-list__link catalog-page-hidden" href="#" title="click to register">
+                                <button class="nav__middle-list__link__btn button-default register-link" type="button"
+                                    title="click to register">
+                                    <span>Регистрация</span>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav__bottom-list">
+                        <li>
+                            <a class="nav__bottom-list__link" href="/index.html" title="Главное">
+                                <button class="nav__bottom-list__link__btn button-default" type="button">
+                                    <span>Главная</span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav__bottom-list__link" href="#" title="Компания">
+                                <button class="nav__bottom-list__link__btn button-default" type="button">
+                                    <span>Компания</span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav__bottom-list__link" href="/assets/other pages/catalog.html" title="Каталог">
+                                <button class="nav__bottom-list__link__btn button-default" type="button">
+                                    <span>Каталог</span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav__bottom-list__link" href="#" title="Новости">
+                                <button class="nav__bottom-list__link__btn button-default" type="button">
+                                    <span>Новости</span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav__bottom-list__link" href="#" title="Спецпредложения">
+                                <button class="nav__bottom-list__link__btn button-default" type="button">
+                                    <span>Спецпредложения</span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav__bottom-list__link" href="#" title="Доставка">
+                                <button class="nav__bottom-list__link__btn button-default" type="button">
+                                    <span>Доставка</span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav__bottom-list__link" href="#" title="Контакты">
+                                <button class="nav__bottom-list__link__btn button-default" type="button">
+                                    <span>Контакты</span>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="body-layout">
+        <div class="body-layout__wrapper">
+            <section class="perforators">
+                <header class="perforators__header">
+                    <h3 class="perforators__header__title">Перфораторы</h3>
+                </header>
+            </section>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <section class="footer__wrapper__section-1">
+                <div class="footer__wrapper__section-1__left-block">
+                    <a class="footer__wrapper__section-1__left-block__home home-logo" href="/index.html">
+                        <button class="footer__wrapper__section-1__left-block__home__btn button-default home-logo__btn" type="button" title="home"></button>
+                    </a>
+                    <address class="office-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</address>
+                </div>
+                <div class="footer__wrapper__section-1__right-block">
+                    <ul class="footer__wrapper__section-1__right-block__top-list">
+                        <li>
+                            <a class="footer__wrapper__section-1__right-block__top-list__link" href="#">Компания</a>
+                        </li>
+                        <li>
+                            <a class="footer__wrapper__section-1__right-block__top-list__link" href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a class="footer__wrapper__section-1__right-block__top-list__link" href="/assets/other pages/catalog.html">Каталог</a>
+                        </li>
+                        <li>
+                            <a class="footer__wrapper__section-1__right-block__top-list__link" href="#">Доставка</a>
+                        </li>
+                        <li>
+                            <a class="footer__wrapper__section-1__right-block__top-list__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__wrapper__section-1__right-block__bottom-list">
+                        <li>
+                            <a class="footer__wrapper__section-1__right-block__bottom-list__link" href="#">Материалы</a>
+                        </li>
+                        <li>
+                            <a class="footer__wrapper__section-1__right-block__bottom-list__link" href="#">Техника</a>
+                        </li>
+                        <li>
+                            <a class="footer__wrapper__section-1__right-block__bottom-list__link" href="#">Инструмент</a>
+                        </li>
+                        <li>
+                            <a class="footer__wrapper__section-1__right-block__bottom-list__link" href="#">Спецпредложения</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="footer__wrapper__section-2">
+                <div class="footer__wrapper__section-2__block-1 blocks-style">
+                    <span>
+                        © 2010–2019 Компания «Техномарт»<br>
+                        Все права защищены
+                    </span>
+                </div>
+                <div class="footer__wrapper__section-2__block-2 blocks-style">
+                    <ul class="footer__wrapper__section-2__block-2__social-media-list lists-style">
+                        <li>
+                            <a class="footer__wrapper__section-2__block-2__social-media-list__link" href="https://www.vkontakte.com">
+                                <button class="footer__wrapper__section-2__block-2__social-media-list__link__btn" type="button" title="vkontakte"></button>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__wrapper__section-2__block-2__social-media-list__link" href="https://www.instagram.com">
+                                <button class="footer__wrapper__section-2__block-2__social-media-list__link__btn" type="button" title="instagram"></button>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__wrapper__section-2__block-2__social-media-list__link" href="https://www.facebook.com">
+                                <button class="footer__wrapper__section-2__block-2__social-media-list__link__btn" type="button" title="facebook"></button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__wrapper__section-2__block-3 blocks-style lists-style">
+                    <ul class="footer__wrapper__section-2__block-3__contact-list lists-style">
+                        <li>
+                            <label for="email">Обратная связь:</label>
+                            <a class="footer__wrapper__section-2__block-3__contact-list" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                        </li>
+                        <li>
+                            <label for="webpage">Разработано —</label>
+                            <a onclick="htmlacademy_link()" class="footer__wrapper__section-2__block-3__contact-list" href="">htmlacademy.ru</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </footer>
 </body>
 </html>

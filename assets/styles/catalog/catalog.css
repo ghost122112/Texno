@@ -1,0 +1,64 @@
+.header .header__wrapper .header__wrapper__container .nav .nav__top-list li:nth-child(4) .nav__top-list__link .korzina-bgcolor {
+  background-color: #EE3643;
+}
+.header .header__wrapper .header__wrapper__container .nav .nav__middle-list li:nth-child(3) {
+  margin-right: 0px;
+}
+.header .header__wrapper .header__wrapper__container .nav .nav__middle-list li:nth-child(3) .catalog-page-logged-in .login-link {
+  width: 299px;
+  background-image: url(/assets/photos/symbols/icon-logout.svg);
+  background-position-x: 262px;
+}
+.header .header__wrapper .header__wrapper__container .nav .nav__middle-list li:nth-child(3) .catalog-page-logged-in .login-link:hover {
+  transition: all 0.3s ease;
+  background-image: url(/assets/photos/symbols/icon-logout-hover.svg);
+}
+.header .header__wrapper .header__wrapper__container .nav .nav__middle-list li:nth-child(3) .catalog-page-logged-in .login-link:hover .user-icon {
+  background-image: url(/assets/photos/symbols/icon-user-hover.svg);
+}
+.header .header__wrapper .header__wrapper__container .nav .nav__middle-list li:nth-child(3) .catalog-page-logged-in .login-link:active {
+  background-image: url(/assets/photos/symbols/icon-logout.svg);
+}
+.header .header__wrapper .header__wrapper__container .nav .nav__middle-list li:nth-child(3) .catalog-page-logged-in .login-link:active .user-icon {
+  background-image: url(/assets/photos/symbols/icon-user.svg);
+}
+.header .header__wrapper .header__wrapper__container .nav .nav__middle-list li:nth-child(3) .catalog-page-logged-in .login-link .user-icon {
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  left: 16px;
+  background-image: url(/assets/photos/symbols/icon-user.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header .header__wrapper .header__wrapper__container .nav .nav__middle-list li:nth-child(3) .catalog-page-logged-in .login-link .user-name {
+  left: 0;
+  top: 0;
+}
+.header .header__wrapper .header__wrapper__container .nav .nav__middle-list li:nth-child(3) .catalog-page-logged-in .user-purchases {
+  display: flex;
+  text-align: left;
+  position: absolute;
+  left: 44px;
+  top: 41px;
+  width: 250px;
+  color: #32425C;
+  font-family: "Cuprum", sans-serif;
+  font-size: 16px;
+  background-image: url(/assets/photos/symbols/dot.svg);
+  background-repeat: no-repeat;
+  background-position: 89px 7px;
+}
+.header .header__wrapper .header__wrapper__container .nav .nav__middle-list li:nth-child(3) .catalog-page-logged-in .user-purchases .user-data {
+  text-align: right;
+  position: absolute;
+  left: 107px;
+  top: 0px;
+}
+.header .header__wrapper .header__wrapper__container .nav .nav__middle-list li:nth-child(3) .catalog-page-logged-in:hover .user-purchases {
+  color: #EE3643;
+  background-image: url(/assets/photos/symbols/dot-hover.svg);
+}
+.header .header__wrapper .header__wrapper__container .nav .nav__middle-list li:nth-child(4) {
+  display: none;
+}/*# sourceMappingURL=catalog.css.map */

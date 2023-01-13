@@ -1,0 +1,156 @@
+$basic-red: #EE3643;
+$basic-black: #000000;
+$basic-green: #63A63E;
+$basic-grey: #3D546F;
+$basic-greylight: #C5C5C5;
+$basic-background: #F1F5F7;
+$basic-white: #FFFFFF;
+$special-yellow: #FFBF47;
+$special-blue: #3BBCE3;
+$special-lilac: #DC91D8;
+$special-greenlight: #8ED78F;
+$special-yellowlight: #FFD180;
+$special-greylight: #EAEAEA;
+$success: #5FBB2D;
+$warning: #FFBF47;
+$error: #BA2732;
+$top-navbar-bg-color: #293449;
+$bottom-navbar-bg-color: #32425C;
+$bottom-navbar-box-shadow: inset 0px -5px 0px #293449;
+$middle-bottom-navbar-bg-color: rgba(0, 0, 0, 0.0001);
+$button-hover: #CA2C37;
+$button-active: #BA2732;
+$buy-button-bgcolor-active: #518534;
+$past-cost-color: #A9A9A9;
+$second-con-bg-color: #F9F5F0;
+$top-nav-btn-hover: #242f42;
+$top-nav-btn-active: #161D29;
+$top-nav-btn-f-color-active: rgba(255, 255, 255, 0.5);
+$footer-social-media-links: #212A3A;
+
+// ----------------------------- //
+
+// -> other styles
+
+$padding: 0px calc(50% - 470px);
+$f-family-cuprum: 'Cuprum', sans-serif;
+$f-family-ptsans: 'PT Sans', sans-serif;
+$title-font-size: 24px;
+$default-font-size: 18px;
+$default-font-weight: 400;
+$default-font-style: normal;
+
+// in catalog page, the only difference in header is cart button ->
+// which is red with qty: 10 and user is logged in.
+
+// little change in header
+// start...
+
+
+.header {
+    .header__wrapper {
+        .header__wrapper__container {
+            .nav {
+                .nav__top-list {
+                    li:nth-child(4) {
+                        .nav__top-list__link {
+                            .korzina-bgcolor {
+                                background-color: $basic-red;
+                            }
+                        }
+                    }
+                }
+                .nav__middle-list {
+                    li:nth-child(3) {
+                        margin-right: 0px;
+                        .catalog-page-logged-in {
+                            .login-link {
+                                width: 299px;
+                                background: {
+                                    image: url(/assets/photos/symbols/icon-logout.svg);
+                                    position-x: 262px;
+                                }
+                                &:hover {
+                                    transition: all 0.3s ease;
+                                    background: {
+                                        image: url(/assets/photos/symbols/icon-logout-hover.svg);
+                                    }
+                                    .user-icon {
+                                        background: {
+                                            image: url(/assets/photos/symbols/icon-user-hover.svg);
+                                        }
+                                    }
+                                }
+                                &:active {
+                                    background: {
+                                        image: url(/assets/photos/symbols/icon-logout.svg);
+                                    }
+                                    .user-icon {
+                                        background: {
+                                            image: url(/assets/photos/symbols/icon-user.svg);
+                                        }
+                                    }
+                                }
+                                .user-icon {
+                                    width: 20px;
+                                    height: 18px;
+                                    position: absolute;
+                                    left: 16px;
+                                    background: {
+                                        image: url(/assets/photos/symbols/icon-user.svg);
+                                        repeat: no-repeat;
+                                        position: center;
+                                    }
+                                }
+                                .user-name {
+                                    left: 0;
+                                    top: 0;
+                                }
+                            }
+                            .user-purchases {
+                                display: flex;
+                                text-align: left;
+                                position: absolute;
+                                left: 44px;
+                                top: 41px;
+                                width: 250px;
+                                color: $bottom-navbar-bg-color;
+                                font: {
+                                    family: $f-family-cuprum;
+                                    size: 16px;
+                                }
+                                background: {
+                                    image: url(/assets/photos/symbols/dot.svg);
+                                    repeat: no-repeat;
+                                    position: 89px 7px;
+                                }
+                                .user-data {
+                                    text-align: right;
+                                    position: absolute;
+                                    left: 107px;
+                                    top: 0px;
+                                }
+                            }
+                            &:hover {
+                                .user-purchases {
+                                    color: $basic-red;
+                                    background: {
+                                        image: url(/assets/photos/symbols/dot-hover.svg);
+                                    }
+                                }       
+                            }
+                        }
+                    }
+                    li:nth-child(4) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
