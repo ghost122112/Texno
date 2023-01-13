@@ -1,3 +1,11 @@
+$padding: 0px calc(50% - 470px);
+$f-family-cuprum: 'Cuprum', sans-serif;
+$f-family-ptsans: 'PT Sans', sans-serif;
+$title-font-size: 24px;
+$default-font-size: 18px;
+$default-font-weight: 400;
+$default-font-style: normal;
+
 $basic-red: #EE3643;
 $basic-black: #000000;
 $basic-green: #63A63E;
@@ -28,14 +36,3 @@ $top-nav-btn-active: #161D29;
 $top-nav-btn-f-color-active: rgba(255, 255, 255, 0.5);
 $footer-social-media-links: #212A3A;
 
-// ----------------------------- //
-
-// -> other styles
-
-$padding: 0px calc(50% - 470px);
-$f-family-cuprum: 'Cuprum', sans-serif;
-$f-family-ptsans: 'PT Sans', sans-serif;
-$title-font-size: 24px;
-$default-font-size: 18px;
-$default-font-weight: 400;
-$default-font-style: normal;
