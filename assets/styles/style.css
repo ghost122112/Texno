@@ -22,6 +22,15 @@
   background: #BA2732;
 }
 
+.title {
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425C;
+  font-family: "Cuprum", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
 .header {
   display: block;
 }
@@ -1541,8 +1550,12 @@
 .body-layout .body-layout__wrapper .perforators {
   display: flex;
   flex-flow: column;
-  justify-content: center;
-  align-items: center;
+  padding: 0px calc(50% - 470px);
+}
+.body-layout .body-layout__wrapper .perforators .perforators__header .perforators__header__title {
+  position: relative;
+  left: 0px;
+  top: 0px;
 }
 
 * {
@@ -1565,8 +1578,9 @@ html ul, html ol {
   list-style-type: none;
 }
 html a {
-  color: #63A63E;
+  color: #000000;
   text-decoration: none;
+  font-size: 16px;
 }
 
 .body::-webkit-scrollbar {

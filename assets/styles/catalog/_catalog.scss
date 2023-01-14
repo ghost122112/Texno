@@ -106,8 +106,26 @@
         .perforators {
             display: flex;
             flex-flow: column;
-            justify-content: center;
-            align-items: center;
+            padding: 0px calc(50% - 470px);
+            .perforators__links {
+                .perforators__links__list {
+                    // global code for 'li' selector
+                    li {}
+                    // individual ones for every 'li' selectors
+                    li:nth-child(1) {}
+                    li:nth-child(2) {}
+                    li:nth-child(3) {}
+                    li:nth-child(4) {}
+                }
+            }
+            .perforators__header {
+
+                .perforators__header__title {
+                    position: relative;
+                    left: 0px;
+                    top: 0px;
+                }
+            }
         }
     }
 }

@@ -5,6 +5,7 @@
 
 @import "../styles/default/variables/_variables";
 @import "../styles/default/buttons/_buttons";
+@import "../styles/default/other/_other";
 @import "../styles/layout/__layout";
 @import "../styles/home/_home";
 @import "../styles/default/carts/_carts";
@@ -33,11 +34,11 @@ html {
         }
     }
     a {
-        color: $basic-green;
+        color: $basic-black;
         text-decoration: none;
+        font-size: 16px;
     }
 }
-
 
 .body {
     & {
