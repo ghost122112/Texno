@@ -100,3 +100,14 @@
         }
     }
 }
+
+.body-layout {
+    .body-layout__wrapper {
+        .perforators {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
