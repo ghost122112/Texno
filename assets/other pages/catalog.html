@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/styles/style.css">
     <script src="/assets/scripts/main.js" defer></script>
-    <script src="/assets/scripts/drag.js" defer></script>
+    <script src="/assets/scripts/slider.js" defer></script>
     <title>Texnomart - Catalog</title>
 </head>
 <body class="body">
@@ -161,9 +161,370 @@
                     </ul>
                 </div>
                 <header class="perforators__header">
-                    <h3 class="perforators__header__title title">Перфораторы</h3>
-                    <p class="perforators__header__description"></p>
+                    <h1 class="perforators__header__title title">Перфораторы</h1>
                 </header>
+                <section class="perforators__cost-section">
+                    <div class="perforators__cost-section__input-block">
+                        <header class="perforators__cost-section__input-block__header">
+                            <h2 class="perforators__cost-section__input-block__header__title">Фильтр:</h2>
+                        </header>
+                        <div class="perforators__cost-section__input-block__cost-settings-block">
+                            <div class="perforators__cost-section__input-block__cost-settings-block__cost-block">
+                                <h3 class="perforators__cost-section__input-block__cost-settings-block__cost-block__title">Цена:</h3>
+                                <div class="perforators__cost-section__input-block__cost-settings-block__cost-block__cost">
+                                    <div class="perforators__cost-section__input-block__cost-settings-block__cost-block__cost__i-range-btn">
+                                        <input class="perforators__cost-section__input-block__cost-settings-block__cost-block__cost__i-range-btn__btn" type="range" min="0" max="30000" step="500" value="15000" id="cost-range">
+                                    </div>
+                                    <div class="perforators__cost-section__input-block__cost-settings-block__cost-block__cost__block">
+                                        <div class="perforators__cost-section__input-block__cost-settings-block__cost-block__cost__block__min-cost">
+                                            <span id="output"></span>
+                                        </div>
+                                        <div class="perforators__cost-section__input-block__cost-settings-block__cost-block__cost__block__middle">—</div>
+                                        <div class="perforators__cost-section__input-block__cost-settings-block__cost-block__cost__block__max-cost">
+                                            <span>30000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="perforators__cost-section__input-block__manufacturers">
+                                <h3 class="perforators__cost-section__input-block__manufacturers__title">Производители:</h3>
+                                <ul class="perforators__cost-section__input-block__manufacturers__list">
+                                    <li>
+                                        <label class="perforators__cost-section__input-block__manufacturers__list__check-label check-label">
+                                            <input class="perforators__cost-section__input-block__manufacturers__list__check-btn checkbox-default" type="checkbox" checked>
+                                            <span class="perforators__cost-section__input-block__manufacturers__list__checkmark checkmark-new"></span>
+                                            <span class="check-description">Bosch</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="perforators__cost-section__input-block__manufacturers__list__check-label check-label">
+                                            <input class="perforators__cost-section__input-block__manufacturers__list__check-btn checkbox-default" type="checkbox">
+                                            <span class="perforators__cost-section__input-block__manufacturers__list__checkmark checkmark-new"></span>
+                                            <span class="check-description">Интерскол</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="perforators__cost-section__input-block__manufacturers__list__check-label check-label">
+                                            <input class="perforators__cost-section__input-block__manufacturers__list__check-btn checkbox-default" type="checkbox" checked>
+                                            <span class="perforators__cost-section__input-block__manufacturers__list__checkmark checkmark-new"></span>
+                                            <span class="check-description">Makita</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="perforators__cost-section__input-block__manufacturers__list__check-label check-label">
+                                            <input class="perforators__cost-section__input-block__manufacturers__list__check-btn checkbox-default" type="checkbox">
+                                            <span class="perforators__cost-section__input-block__manufacturers__list__checkmark checkmark-new"></span>
+                                            <span class="check-description">Dewalt</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="perforators__cost-section__input-block__manufacturers__list__check-label check-label">
+                                            <input class="perforators__cost-section__input-block__manufacturers__list__check-btn checkbox-default" type="checkbox">
+                                            <span class="perforators__cost-section__input-block__manufacturers__list__checkmark checkmark-new"></span>
+                                            <span class="check-description">Hitachi</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="perforators__cost-section__input-block__power">
+                                <h3 class="perforators__cost-section__input-block__power__title">Питание:</h3>
+                                <ul class="perforators__cost-section__input-block__power__list">
+                                    <li>
+                                        <label class="perforators__cost-section__input-block__power__list__radio-label radio-label">
+                                            <input class="perforators__cost-section__input-block__power__list__radio-label__radio-btn radio-btn" type="radio" name="power" checked>
+                                            <span class="perforators__cost-section__input-block__power__list__radio-label__radio-new radio-new"></span>
+                                            <span class="radio-description">Аккумуляторные</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="perforators__cost-section__input-block__power__list__radio-label radio-label">
+                                            <input class="perforators__cost-section__input-block__power__list__radio-label__radio-btn radio-btn" type="radio" name="power">
+                                            <span class="perforators__cost-section__input-block__power__list__radio-label__radio-new radio-new"></span>
+                                            <span class="radio-description">Сетевые</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="perforators__cost-section__input-block__submit">
+                                <form class="perforators__cost-section__input-block__submit__form" action="">
+                                    <input class="perforators__cost-section__input-block__submit__form__btn" type="submit" value="Показать">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="perforators__cost-section__output-block">
+                        <div class="perforators__cost-section__output-block__header">
+                            <label class="perforators__cost-section__output-block__header__label">
+                                <span class="perforators__cost-section__output-block__header__label__sorting">Сортировка:</span>
+                                <div class="perforators__cost-section__output-block__header__label__buttons">
+                                    <label class="perforators__cost-section__output-block__header__label__buttons__label">
+                                        <input class="perforators__cost-section__output-block__header__label__buttons__label__rel-cost input-radio" type="radio" name="radio" checked>
+                                        <span class="input-radio-new">По цене</span>
+                                    </label>
+                                    <label class="perforators__cost-section__output-block__header__label__buttons__label">
+                                        <input class="perforators__cost-section__output-block__header__label__buttons__label__rel-type input-radio" type="radio" name="radio">
+                                        <span class="input-radio-new">По типу</span>
+                                    </label>
+                                    <label class="perforators__cost-section__output-block__header__label__buttons__label">
+                                        <input class="perforators__cost-section__output-block__header__label__buttons__label__rel-functionality input-radio" type="radio" name="radio">
+                                        <span class="input-radio-new">По функционалу</span>
+                                    </label>
+                                    <div class="perforators__cost-section__output-block__header__label__buttons__label__rel-t-b">
+                                        <label class="perforators__cost-section__output-block__header__label__buttons__label__rel-t-b__label">
+                                            <input class="perforators__cost-section__output-block__header__label__buttons__label__rel-t-b__label__top" type="radio" name="radio2" id="" checked>
+                                            <span class="perforators__cost-section__output-block__header__label__buttons__label__rel-t-b__label__top-new"></span>
+                                        </label>
+                                        <label class="perforators__cost-section__output-block__header__label__buttons__label__rel-t-b__label">
+                                            <input class="perforators__cost-section__output-block__header__label__buttons__label__rel-t-b__label__bottom" type="radio" name="radio2" id="">
+                                            <span class="perforators__cost-section__output-block__header__label__buttons__label__rel-t-b__label__bottom-new"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <ul class="perforators__cost-section__output-block__list">
+                            <li>
+                                <div class="product-box">
+                                    <div class="product-box__image"></div>
+                                    <div class="product-box__buy">
+                                        <button class="product-box__buy__btn button-default" type="button" title="Купить">
+                                            <span>Купить</span>
+                                        </button>
+                                        <button class="product-box__add__btn button-default" type="button" title="В закладки">
+                                            <span>В закладки</span>
+                                        </button>
+                                    </div>
+                                    <article class="product-box__article">
+                                        <h3 class="product-box__article__title">
+                                            Перфоратор BOSCH
+                                            <br />
+                                            BFG 6000
+                                        </h3>
+                                        <span class="product-box__article__past-cost">22500 Р.</span>
+                                        <button class="product-box__article__new-cost button-default" type="button">
+                                            <span>15500 Р.</span>
+                                        </button>
+                                    </article>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-box">
+                                    <div class="product-box__image"></div>
+                                    <div class="product-box__buy">
+                                        <button class="product-box__buy__btn button-default" type="button" title="Купить">
+                                            <span>Купить</span>
+                                        </button>
+                                        <button class="product-box__add__btn button-default" type="button" title="В закладки">
+                                            <span>В закладки</span>
+                                        </button>
+                                    </div>
+                                    <article class="product-box__article">
+                                        <h3 class="product-box__article__title">
+                                            Перфоратор BOSCH
+                                            <br />
+                                            BFG 6000
+                                        </h3>
+                                        <span class="product-box__article__past-cost">22500 Р.</span>
+                                        <button class="product-box__article__new-cost button-default" type="button">
+                                            <span>15500 Р.</span>
+                                        </button>
+                                    </article>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-box">
+                                    <div class="product-box__image"></div>
+                                    <div class="product-box__buy">
+                                        <button class="product-box__buy__btn button-default" type="button" title="Купить">
+                                            <span>Купить</span>
+                                        </button>
+                                        <button class="product-box__add__btn button-default" type="button" title="В закладки">
+                                            <span>В закладки</span>
+                                        </button>
+                                    </div>
+                                    <article class="product-box__article">
+                                        <h3 class="product-box__article__title">
+                                            Перфоратор BOSCH
+                                            <br />
+                                            BFG 6000
+                                        </h3>
+                                        <span class="product-box__article__past-cost">22500 Р.</span>
+                                        <button class="product-box__article__new-cost button-default" type="button">
+                                            <span>15500 Р.</span>
+                                        </button>
+                                    </article>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-box">
+                                    <div class="product-box__image"></div>
+                                    <div class="product-box__buy">
+                                        <button class="product-box__buy__btn button-default" type="button" title="Купить">
+                                            <span>Купить</span>
+                                        </button>
+                                        <button class="product-box__add__btn button-default" type="button" title="В закладки">
+                                            <span>В закладки</span>
+                                        </button>
+                                    </div>
+                                    <article class="product-box__article">
+                                        <h3 class="product-box__article__title">
+                                            Перфоратор BOSCH
+                                            <br />
+                                            BFG 6000
+                                        </h3>
+                                        <span class="product-box__article__past-cost">22500 Р.</span>
+                                        <button class="product-box__article__new-cost button-default" type="button">
+                                            <span>15500 Р.</span>
+                                        </button>
+                                    </article>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-box">
+                                    <div class="product-box__image"></div>
+                                    <div class="product-box__buy">
+                                        <button class="product-box__buy__btn button-default" type="button" title="Купить">
+                                            <span>Купить</span>
+                                        </button>
+                                        <button class="product-box__add__btn button-default" type="button" title="В закладки">
+                                            <span>В закладки</span>
+                                        </button>
+                                    </div>
+                                    <article class="product-box__article">
+                                        <h3 class="product-box__article__title">
+                                            Перфоратор BOSCH
+                                            <br />
+                                            BFG 6000
+                                        </h3>
+                                        <span class="product-box__article__past-cost">22500 Р.</span>
+                                        <button class="product-box__article__new-cost button-default" type="button">
+                                            <span>15500 Р.</span>
+                                        </button>
+                                    </article>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-box">
+                                    <div class="product-box__image"></div>
+                                    <div class="product-box__buy">
+                                        <button class="product-box__buy__btn button-default" type="button" title="Купить">
+                                            <span>Купить</span>
+                                        </button>
+                                        <button class="product-box__add__btn button-default" type="button" title="В закладки">
+                                            <span>В закладки</span>
+                                        </button>
+                                    </div>
+                                    <article class="product-box__article">
+                                        <h3 class="product-box__article__title">
+                                            Перфоратор BOSCH
+                                            <br />
+                                            BFG 6000
+                                        </h3>
+                                        <span class="product-box__article__past-cost">22500 Р.</span>
+                                        <button class="product-box__article__new-cost button-default" type="button">
+                                            <span>15500 Р.</span>
+                                        </button>
+                                    </article>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-box">
+                                    <div class="product-box__image"></div>
+                                    <div class="product-box__buy">
+                                        <button class="product-box__buy__btn button-default" type="button" title="Купить">
+                                            <span>Купить</span>
+                                        </button>
+                                        <button class="product-box__add__btn button-default" type="button" title="В закладки">
+                                            <span>В закладки</span>
+                                        </button>
+                                    </div>
+                                    <article class="product-box__article">
+                                        <h3 class="product-box__article__title">
+                                            Перфоратор BOSCH
+                                            <br />
+                                            BFG 6000
+                                        </h3>
+                                        <span class="product-box__article__past-cost">22500 Р.</span>
+                                        <button class="product-box__article__new-cost button-default" type="button">
+                                            <span>15500 Р.</span>
+                                        </button>
+                                    </article>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-box">
+                                    <div class="product-box__image"></div>
+                                    <div class="product-box__buy">
+                                        <button class="product-box__buy__btn button-default" type="button" title="Купить">
+                                            <span>Купить</span>
+                                        </button>
+                                        <button class="product-box__add__btn button-default" type="button" title="В закладки">
+                                            <span>В закладки</span>
+                                        </button>
+                                    </div>
+                                    <article class="product-box__article">
+                                        <h3 class="product-box__article__title">
+                                            Перфоратор BOSCH
+                                            <br />
+                                            BFG 6000
+                                        </h3>
+                                        <span class="product-box__article__past-cost">22500 Р.</span>
+                                        <button class="product-box__article__new-cost button-default" type="button">
+                                            <span>15500 Р.</span>
+                                        </button>
+                                    </article>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-box">
+                                    <div class="product-box__image"></div>
+                                    <div class="product-box__buy">
+                                        <button class="product-box__buy__btn button-default" type="button" title="Купить">
+                                            <span>Купить</span>
+                                        </button>
+                                        <button class="product-box__add__btn button-default" type="button" title="В закладки">
+                                            <span>В закладки</span>
+                                        </button>
+                                    </div>
+                                    <article class="product-box__article">
+                                        <h3 class="product-box__article__title">
+                                            Перфоратор BOSCH
+                                            <br />
+                                            BFG 6000
+                                        </h3>
+                                        <span class="product-box__article__past-cost">22500 Р.</span>
+                                        <button class="product-box__article__new-cost button-default" type="button">
+                                            <span>15500 Р.</span>
+                                        </button>
+                                    </article>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="perforators__cost-section__output-block__product-pagination-block">
+                            <label class="perforators__cost-section__output-block__product-pagination-block__label">
+                                <input class="perforators__cost-section__output-block__product-pagination-block__label__page" type="radio" name="page" id="" checked>
+                                <span class="perforators__cost-section__output-block__product-pagination-block__label__page-new">1</span>
+                            </label>
+                            <label class="perforators__cost-section__output-block__product-pagination-block__label">
+                                <input class="perforators__cost-section__output-block__product-pagination-block__label__page" type="radio" name="page" id="">
+                                <span class="perforators__cost-section__output-block__product-pagination-block__label__page-new">2</span>
+                            </label>
+                            <label class="perforators__cost-section__output-block__product-pagination-block__label">
+                                <input class="perforators__cost-section__output-block__product-pagination-block__label__page" type="radio" name="page" id="">
+                                <span class="perforators__cost-section__output-block__product-pagination-block__label__page-new">3</span>
+                            </label>
+                            <label class="perforators__cost-section__output-block__product-pagination-block__label">
+                                <input class="perforators__cost-section__output-block__product-pagination-block__label__page-next" type="radio" name="page" id="">
+                                <span class="perforators__cost-section__output-block__product-pagination-block__label__page-next-new">Следующая</span>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+                <section class="perforators__some-facts">
+                    <header class="perforators__some-facts__header">
+                        <h3 class="perforators__some-facts__header__title">Пара слов о перфораторах</h3>
+                    </header>
+                </section>
             </section>
         </div>
     </div>
