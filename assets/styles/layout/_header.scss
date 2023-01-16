@@ -7,7 +7,7 @@
             flex-flow: column;
             .nav {
                 background: rgb(242 242 242);
-                max-height: 320px;
+                min-height: 320px;
                 .nav__top-list {
                     display: flex;
                     flex-flow: row;
