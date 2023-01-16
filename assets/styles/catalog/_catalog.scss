@@ -704,5 +704,21 @@
                 }
             }
         }
+        .some-facts {
+            display: flex;
+            align-items: center;
+            background: $catalog-settings-header;
+            min-height: 258px;
+            padding: $padding;
+            .some-facts__header {
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                min-height: 258px;
+                .some-facts__header__title {
+                    padding-bottom: 21px;
+                }
+            }
+        }
     }
 }

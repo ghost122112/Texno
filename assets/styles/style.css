@@ -31,6 +31,13 @@
   font-size: 30px;
 }
 
+.description {
+  line-height: 25px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+
 .header {
   display: block;
 }
@@ -520,7 +527,7 @@
 .section-1 {
   display: flex;
   justify-content: center;
-  margin-top: 119px;
+  margin-top: 58px;
   margin-bottom: 59px;
 }
 .section-1 .section-1__container {
@@ -2111,6 +2118,22 @@
   width: 138px;
   line-height: 18px;
 }
+.body-layout .body-layout__wrapper .some-facts {
+  display: flex;
+  align-items: center;
+  background: #F2F6F8;
+  min-height: 258px;
+  padding: 0px calc(50% - 470px);
+}
+.body-layout .body-layout__wrapper .some-facts .some-facts__header {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  min-height: 258px;
+}
+.body-layout .body-layout__wrapper .some-facts .some-facts__header .some-facts__header__title {
+  padding-bottom: 21px;
+}
 
 * {
   padding: 0;
@@ -2134,7 +2157,6 @@ html ul, html ol {
 html a {
   color: #000000;
   text-decoration: none;
-  font-size: 16px;
 }
 
 .body::-webkit-scrollbar {
