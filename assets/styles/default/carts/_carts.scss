@@ -184,6 +184,15 @@
         }
         .product-box__buy {
             display: flex;
+            animation: box-hover 0.2s ease-in-out;
+            @keyframes box-hover {
+                from {
+                    filter: opacity(0);
+                }
+                to {
+                    filter: opacity(1);
+                }
+            }
             .product-box__buy__btn {
                 animation: buy-and-add-btns 0.4s ease;
             }
