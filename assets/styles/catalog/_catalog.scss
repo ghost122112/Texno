@@ -615,12 +615,28 @@
                         margin-top: 29px;
                         column-gap: 22px;
                         row-gap: 17px;
+                        animation: 1s ease animation_list;
+                        z-index: 0;
+                        @keyframes animation_list {
+                            from {
+                                transform: translateX(300px);
+                            }
+                            to {
+                                transform: translateY(0px);
+                            }
+                        }
                         .product-box__article__title {
                             text-transform: none;
                             font-size: 18px;
                             line-height: 20px;
                             font-weight: 700;
                         }
+                    }
+                    .page-2 {
+                        display: none;
+                    }
+                    .page-3 {
+                        display: none;
                     }
                     .perforators__cost-section__output-block__product-pagination-block {
                         display: flex;
