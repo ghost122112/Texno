@@ -748,6 +748,18 @@
                     height: 449px;
                     background: none;
                     z-index: 150;
+                    animation: 0.6s ease-in-out popup_messages_animation;
+                    @keyframes popup_messages_animation {
+                        0% {
+                            transform: translateY(-1000px);
+                        }
+                        75% {
+                            transform: translateY(50px);
+                        }
+                        100% {
+                            transform: translateY(0px);
+                        }
+                    }
                     iframe {
                         filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
                         border: none;
@@ -802,6 +814,7 @@
                     background: none;
                     padding: 0px calc(50% - 310px);
                     z-index: 150;
+                    animation: 0.6s ease-in-out popup_messages_animation;
                     .form {
                         border: none;
                         border-top: 7px solid $basic-red;

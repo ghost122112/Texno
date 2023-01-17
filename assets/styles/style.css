@@ -1192,6 +1192,18 @@
   height: 449px;
   background: none;
   z-index: 150;
+  animation: 0.6s ease-in-out popup_messages_animation;
+}
+@keyframes popup_messages_animation {
+  0% {
+    transform: translateY(-1000px);
+  }
+  75% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 .section-5 .section-5__container .section-5__container__right-block .section-5__container__right-block__map-section .section-5__container__right-block__map-section__popup-map iframe {
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
@@ -1244,6 +1256,7 @@
   background: none;
   padding: 0px calc(50% - 310px);
   z-index: 150;
+  animation: 0.6s ease-in-out popup_messages_animation;
 }
 .section-5 .section-5__container .section-5__container__right-block .section-5__container__right-block__map-section .form-container .form {
   border: none;
