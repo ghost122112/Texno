@@ -619,9 +619,11 @@
                         z-index: 0;
                         @keyframes animation_list {
                             from {
-                                transform: translateX(300px);
+                                filter: opacity(0);
+                                transform: translateX(100px);
                             }
                             to {
+                                filter: opacity(1);
                                 transform: translateY(0px);
                             }
                         }
