@@ -898,6 +898,7 @@
   row-gap: 21px;
   flex-wrap: wrap;
 }
+
 .producers-btn {
   width: 220px;
   height: 145px;
@@ -1326,19 +1327,52 @@
   height: 38px;
 }
 
+.product-picture-1 {
+  background-image: url(/assets/photos/tools/Perforator9000.svg);
+}
+
+.product-picture-2 {
+  background-image: url(/assets/photos/tools/perforator-3000.svg);
+}
+
+.product-picture-3 {
+  background-image: url(/assets/photos/tools/perforator-6000.svg);
+}
+
+.product-picture-4 {
+  background-image: url(/assets/photos/tools/Perforator-2000.svg);
+}
+
+.cart-new-status {
+  display: none;
+}
+
+.cart-new {
+  background-image: url(/assets/photos/other/Каталог\ new.svg);
+  background-repeat: no-repeat;
+  background-position: 150px 0px;
+}
+
 .product-box {
   width: 217px;
   height: 316px;
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .product-box .product-box__image {
   display: flex;
   justify-content: center;
   width: 100%;
   height: 50%;
-  background-image: url(/assets/photos/other/Карточка\ товара\ 1.svg);
-  background-position: -2px -1px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.product-box .product-box__image .product-box__image__status {
+  width: 70px;
+  height: 70px;
+  padding-left: 150px;
 }
 .product-box .product-box__buy {
   display: none;
