@@ -1,21 +1,21 @@
-var catalog_link = () => {
-    return window.open("/assets/other pages/catalog.html");
+const catalog_link = () => {
+  return window.open("/assets/other pages/catalog.html");
 }
 
-var htmlacademy_link = () => {
+const htmlacademy_link = () => {
   return window.open("https://www.htmlacademy.ru");
 }
 
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
-var plusSlides = (n) => { showSlides(slideIndex += n); }
-var currentSlide = (n) => { showSlides(slideIndex = n); }
+let plusSlides = (n) => { showSlides(slideIndex += n); }
+let currentSlide = (n) => { showSlides(slideIndex = n); }
 
 function showSlides (n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {
     slideIndex = 1
   }
@@ -34,8 +34,8 @@ function showSlides (n) {
 
 // list of services
 // script to show services
-var openCity = (evt, cityName) => {
-  var i, tabcontent, tablinks;
+const openCity = (evt, cityName) => {
+  let i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("section-4__container__content-blocks__tab-content");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
@@ -52,25 +52,25 @@ document.getElementById("defaultOpen").click();
 // end of service script
 
 // script that will popup the map in extended version of it
-var popupMap = () => {
-  var container = document.getElementById("popup_map").style.display = "flex";
+const popupMap = () => {
+  let container = document.getElementById("popup_map").style.display = "flex";
   return container;
 };
 
-var closePopup = () => {
-  var closeContainer = document.getElementById("popup_map").style.display = "none";
+const closePopup = () => {
+  let closeContainer = document.getElementById("popup_map").style.display = "none";
   return closeContainer;
 }
 // end of popup map script
 
 // form popup script
-var popupForm = () => {
-  var formContainer = document.getElementById("form_popup").style.display = "flex";
+const popupForm = () => {
+  let formContainer = document.getElementById("form_popup").style.display = "flex";
   return formContainer;
 }
 
-var closePopupForm = () => {
-  var formContainerClose = document.getElementById("form_popup").style.display = "none";
+const closePopupForm = () => {
+  let formContainerClose = document.getElementById("form_popup").style.display = "none";
   return formContainerClose;
 }
 

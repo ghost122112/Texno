@@ -1,7 +1,7 @@
 // pagination script
 
-var pagination = (evt, page_number) => {
-    var i, tabcontent, tablinks;
+const pagination = (evt, page_number) => {
+    let i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("perforators__cost-section__output-block__list");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
