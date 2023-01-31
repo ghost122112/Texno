@@ -50,4 +50,5 @@ html {
         &::-webkit-scrollbar-thumb {background: #818181;}
         &::-webkit-scrollbar-thumb:active {background: $basic-grey;}
     }
+    scroll-behavior: smooth;
 }
